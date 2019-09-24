@@ -2,6 +2,7 @@
 #include <vector>
 #include <omp.h>
 #include <cassert>
+#include <stdlib.h>
 using namespace std;
 
 // macro for linear indexing into 2D table (column-major)
@@ -34,7 +35,7 @@ int main(int argc, char* argv[]) {
     vector<int> value(nitems,0);
 
     // initialize weights and values randomly
-    srand( time(nullptr) );
+    srand( time(0) );
     for(int i = 0; i < nitems; i++)
     {
         // weight should not exceed capcity
