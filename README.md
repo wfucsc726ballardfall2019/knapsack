@@ -1,6 +1,6 @@
 To compile sequential code:
 
-`g++ -fopenmp -o knapsack_seqential knapsack_sequential.cpp`
+`g++ -fopenmp -o knapsack_sequential knapsack_sequential.cpp`
 
 (Note that -fopenmp is required to use OpenMP timers)
 
